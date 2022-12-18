@@ -1,76 +1,376 @@
  
 Bibtex (bib) file for the thesis style document.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% START CONTEXTUAL CITATIONS     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{DBLP:journals/corr/abs-1901-00041,
+  author     = {Paras Jain and
+                Xiangxi Mo and
+                Ajay Jain and
+                Harikaran Subbaraj and
+                Rehan Sohail Durrani and
+                Alexey Tumanov and
+                Joseph Gonzalez and
+                Ion Stoica},
+  title      = {Dynamic Space-Time Scheduling for {GPU} Inference},
+  journal    = {CoRR},
+  volume     = {abs/1901.00041},
+  year       = {2019},
+  url        = {http://arxiv.org/abs/1901.00041},
+  eprinttype = {arXiv},
+  eprint     = {1901.00041},
+  timestamp  = {Fri, 22 May 2020 10:38:16 +0200},
+  biburl     = {https://dblp.org/rec/journals/corr/abs-1901-00041.bib},
+  bibsource  = {dblp computer science bibliography, https://dblp.org}
+}
+@book{barroso,
+  author    = {Barroso, Luiz Andr and Clidaras, Jimmy and Hlzle, Urs},
+  title     = {The Datacenter as a Computer: An Introduction to the Design of Warehouse-Scale Machines},
+  year      = {2013},
+  isbn      = {1627050094},
+  publisher = {Morgan \& Claypool Publishers},
+  edition   = {2nd}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% END CONTEXTUAL CITATIONS       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% START MODEL SERVING CITATIONS  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{symphony,
+  author    = {Lequn Chen and
+               Weixin Deng and
+               Anirudh Canumalla and
+               Yu Xin and
+               Matthai Philipose and
+               Arvind Krishnamurthy},
+  title     = {Symphony: Combining Load Balancing and Scheduling for Serving DNNs},
+  booktitle = {ASPLOS' 2023 [Currently Under Review]},
+  year      = {2022},
+}
+@inproceedings{nexus,
+  author    = {Haichen Shen and
+               Lequn Chen and
+               Yuchen Jin and
+               Liangyu Zhao and
+               Bingyu Kong and
+               Matthai Philipose and
+               Arvind Krishnamurthy and
+               Ravi Sundaram},
+  title     = {Nexus: a {GPU} cluster engine for accelerating DNN-based video analysis},
+  booktitle = {Proceedings of the 27th {ACM} Symposium on Operating Systems Principles,
+               {SOSP} 2019, Huntsville, ON, Canada, October 27-30, 2019},
+  pages     = {322--337},
+  publisher = {{ACM}},
+  year      = {2019},
+  url       = {https://doi.org/10.1145/3341301.3359658},
+  doi       = {10.1145/3341301.3359658},
+  timestamp = {Tue, 19 Nov 2019 12:45:13 +0100},
+  biburl    = {https://dblp.org/rec/conf/sosp/ShenCJZKPKS19.bib}
+}
+@inproceedings{clockwork,
+  author    = {Arpan Gujarati and Reza Karimi and Safya Alzayat and Wei Hao and Antoine Kaufmann and Ymir Vigfusson and Jonathan Mace},
+  title     = {Serving DNNs like Clockwork: Performance Predictability from the Bottom Up},
+  booktitle = {14th {USENIX} Symposium on Operating Systems Design and Implementation ({OSDI} 20)},
+  year      = {2020},
+  isbn      = {978-1-939133-19-9},
+  pages     = {443--462},
+  url       = {https://www.usenix.org/conference/osdi20/presentation/gujarati},
+  publisher = {{USENIX} Association},
+  month     = nov
+}
+
+@inproceedings{Clipper,
+  author    = {Daniel Crankshaw and
+               Xin Wang and
+               Giulio Zhou and
+               Michael J. Franklin and
+               Joseph E. Gonzalez and
+               Ion Stoica},
+  editor    = {Aditya Akella and
+               Jon Howell},
+  title     = {Clipper: {A} Low-Latency Online Prediction Serving System},
+  booktitle = {14th {USENIX} Symposium on Networked Systems Design and Implementation,
+               {NSDI} 2017, Boston, MA, USA, March 27-29, 2017},
+  pages     = {613--627},
+  publisher = {{USENIX} Association},
+  year      = {2017},
+  url       = {https://www.usenix.org/conference/nsdi17/technical-sessions/presentation/crankshaw},
+  timestamp = {Tue, 10 Dec 2019 15:37:26 +0100},
+  biburl    = {https://dblp.org/rec/conf/nsdi/CrankshawWZFGS17.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{TFServing,
+  author    = {Christopher Olston and
+               Noah Fiedel and
+               Kiril Gorovoy and
+               Jeremiah Harmsen and
+               Li Lao and
+               Fangwei Li and
+               Vinu Rajashekhar and
+               Sukriti Ramesh and
+               Jordan Soyke},
+  title     = {TensorFlow-Serving: Flexible, High-Performance {ML} Serving},
+  journal   = {CoRR},
+  volume    = {abs/1712.06139},
+  year      = {2017},
+  url       = {http://arxiv.org/abs/1712.06139},
+  archivePrefix = {arXiv},
+  eprint    = {1712.06139},
+  timestamp = {Mon, 13 Aug 2018 16:48:13 +0200},
+  biburl    = {https://dblp.org/rec/journals/corr/abs-1712-06139.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% END MODEL SERVING  CITATIONS   %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
  
 @string{Knuth="Donald E. Knuth"}
- 
-@book{book,
-   author = knuth,
-   title = "The {\TeX} book",
-   publisher = "Addison-Wesley",
-   year = 1984}
- 
-@book{Tbook,
-   author = knuth,
-   title = "{\TeX}: The Program",
-   publisher = "Addison-Wesley",
-   year = 1986}
- 
-@book{Metafont,
-   author = knuth,
-   title = "The Metafont book",
-   publisher = "Addison-Wesley",
-   year = 1986}
- 
-@book{CMT,
-   author = knuth,
-   title = "Computer Modern Typefaces",
-   publisher = "Addison-Wesley",
-   year = 1986}
- 
-@book{Lbook,
-   author = "Leslie Lamport",
-   title = "{\LaTeX}: A Document Preparation System",
-   edition = "2nd",
-   publisher = "Addison-Wesley",
-   year = 1994}
- 
-@book{companion,
-   author = "M{ichel} Goossens and F{rank} Mittelbach and A{lexander} Samarin",
-   title = "The {\LaTeX} Companion",
-   publisher = "Addison-Wesley",
-   year = 1994}
- 
-@article{TUG:h-l,
-  author = "Editor",
-  title = "Hyphenation Exception Log",
-  journal = "TUGboat",
-  volume = 7,
-  number = 3,
-  year = 1986,
-  pages = "145"}
- 
- 
-@book{Hamlet,
-   author = "William Shakespeare",
-   title = "Hamlet",
-   publisher = "F.S.~Crofts~\&~Co., Inc.",
-   address = "NY",
-   year = 1946,
-   note = "Act~I, Scene~3, Lines~70-72, are apropos."}
- 
-Following author fields is not standard
-@book{JTeX,
-   author = "{Spivak, M.D., Ph.D.}",
-   title = "The Joy of {\TeX}",
-   publisher = "American Mathematical Society",
-   address = "RI",
-   year = 1986}
- 
-@book{PCTeX,
-   author = "{Spivak, M.D., Ph.D.}",
-   title = "PC{\TeX}\ Manual",
-   publisher = "Personal {\TeX}, Inc.",
-   address = "CA",
-   year = 1985}
- 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  START MODEL ZOO  CITATIONS    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@article{densenet,
+  author     = {Gao Huang and
+                Zhuang Liu and
+                Kilian Q. Weinberger},
+  title      = {Densely Connected Convolutional Networks},
+  journal    = {CoRR},
+  volume     = {abs/1608.06993},
+  year       = {2016},
+  url        = {http://arxiv.org/abs/1608.06993},
+  eprinttype = {arXiv},
+  eprint     = {1608.06993},
+  timestamp  = {Mon, 10 Sep 2018 15:49:32 +0200},
+  biburl     = {https://dblp.org/rec/journals/corr/HuangLW16a.bib},
+  bibsource  = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{resnet,
+  author     = {Kaiming He and
+                Xiangyu Zhang and
+                Shaoqing Ren and
+                Jian Sun},
+  title      = {Deep Residual Learning for Image Recognition},
+  journal    = {CoRR},
+  volume     = {abs/1512.03385},
+  year       = {2015},
+  url        = {http://arxiv.org/abs/1512.03385},
+  eprinttype = {arXiv},
+  eprint     = {1512.03385},
+  timestamp  = {Wed, 17 Apr 2019 17:23:45 +0200},
+  biburl     = {https://dblp.org/rec/journals/corr/HeZRS15.bib},
+  bibsource  = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@article{resnetv2,
+  author     = {Kaiming He and
+                Xiangyu Zhang and
+                Shaoqing Ren and
+                Jian Sun},
+  title      = {Identity Mappings in Deep Residual Networks},
+  journal    = {CoRR},
+  volume     = {abs/1603.05027},
+  year       = {2016},
+  url        = {http://arxiv.org/abs/1603.05027},
+  eprinttype = {arXiv},
+  eprint     = {1603.05027},
+  timestamp  = {Wed, 17 Apr 2019 17:23:45 +0200},
+  biburl     = {https://dblp.org/rec/journals/corr/HeZR016.bib},
+  bibsource  = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@misc{vgg,
+  title         = {Very Deep Convolutional Networks for Large-Scale Image Recognition},
+  author        = {Karen Simonyan and Andrew Zisserman},
+  year          = {2014},
+  eprint        = {1409.1556},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CV}
+}
+
+@article{mobilenet,
+  author     = {Andrew G. Howard and
+                Menglong Zhu and
+                Bo Chen and
+                Dmitry Kalenichenko and
+                Weijun Wang and
+                Tobias Weyand and
+                Marco Andreetto and
+                Hartwig Adam},
+  title      = {MobileNets: Efficient Convolutional Neural Networks for Mobile Vision
+                Applications},
+  journal    = {CoRR},
+  volume     = {abs/1704.04861},
+  year       = {2017},
+  url        = {http://arxiv.org/abs/1704.04861},
+  eprinttype = {arXiv},
+  eprint     = {1704.04861},
+  timestamp  = {Thu, 27 May 2021 16:20:51 +0200},
+  biburl     = {https://dblp.org/rec/journals/corr/HowardZCKWWAA17.bib},
+  bibsource  = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@article{mobilenetv2,
+  author     = {Mark Sandler and
+                Andrew G. Howard and
+                Menglong Zhu and
+                Andrey Zhmoginov and
+                Liang{-}Chieh Chen},
+  title      = {Inverted Residuals and Linear Bottlenecks: Mobile Networks for Classification,
+                Detection and Segmentation},
+  journal    = {CoRR},
+  volume     = {abs/1801.04381},
+  year       = {2018},
+  url        = {http://arxiv.org/abs/1801.04381},
+  eprinttype = {arXiv},
+  eprint     = {1801.04381},
+  timestamp  = {Tue, 12 Jan 2021 15:30:06 +0100},
+  biburl     = {https://dblp.org/rec/journals/corr/abs-1801-04381.bib},
+  bibsource  = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@misc{mobilenetv3,
+  doi       = {10.48550/ARXIV.1905.02244},
+  url       = {https://arxiv.org/abs/1905.02244},
+  author    = {Howard, Andrew and Sandler, Mark and Chu, Grace and Chen, Liang-Chieh and Chen, Bo and Tan, Mingxing and Wang, Weijun and Zhu, Yukun and Pang, Ruoming and Vasudevan, Vijay and Le, Quoc V. and Adam, Hartwig},
+  keywords  = {Computer Vision and Pattern Recognition (cs.CV), FOS: Computer and information sciences, FOS: Computer and information sciences},
+  title     = {Searching for MobileNetV3},
+  publisher = {arXiv},
+  year      = {2019},
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+
+@article{efficientnet,
+  author     = {Mingxing Tan and
+                Quoc V. Le},
+  title      = {EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks},
+  journal    = {CoRR},
+  volume     = {abs/1905.11946},
+  year       = {2019},
+  url        = {http://arxiv.org/abs/1905.11946},
+  eprinttype = {arXiv},
+  eprint     = {1905.11946},
+  timestamp  = {Mon, 03 Jun 2019 13:42:33 +0200},
+  biburl     = {https://dblp.org/rec/journals/corr/abs-1905-11946.bib},
+  bibsource  = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@article{efficientnetv2,
+  author     = {Mingxing Tan and
+                Quoc V. Le},
+  title      = {EfficientNetV2: Smaller Models and Faster Training},
+  journal    = {CoRR},
+  volume     = {abs/2104.00298},
+  year       = {2021},
+  url        = {https://arxiv.org/abs/2104.00298},
+  eprinttype = {arXiv},
+  eprint     = {2104.00298},
+  timestamp  = {Mon, 12 Apr 2021 16:14:56 +0200},
+  biburl     = {https://dblp.org/rec/journals/corr/abs-2104-00298.bib},
+  bibsource  = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@article{inceptionresnet,
+  author     = {Christian Szegedy and
+                Sergey Ioffe and
+                Vincent Vanhoucke},
+  title      = {Inception-v4, Inception-ResNet and the Impact of Residual Connections
+                on Learning},
+  journal    = {CoRR},
+  volume     = {abs/1602.07261},
+  year       = {2016},
+  url        = {http://arxiv.org/abs/1602.07261},
+  eprinttype = {arXiv},
+  eprint     = {1602.07261},
+  timestamp  = {Mon, 13 Aug 2018 16:48:39 +0200},
+  biburl     = {https://dblp.org/rec/journals/corr/SzegedyIV16.bib},
+  bibsource  = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@article{inceptionv3,
+  author     = {Christian Szegedy and
+                Vincent Vanhoucke and
+                Sergey Ioffe and
+                Jonathon Shlens and
+                Zbigniew Wojna},
+  title      = {Rethinking the Inception Architecture for Computer Vision},
+  journal    = {CoRR},
+  volume     = {abs/1512.00567},
+  year       = {2015},
+  url        = {http://arxiv.org/abs/1512.00567},
+  eprinttype = {arXiv},
+  eprint     = {1512.00567},
+  timestamp  = {Mon, 13 Aug 2018 16:49:07 +0200},
+  biburl     = {https://dblp.org/rec/journals/corr/SzegedyVISW15.bib},
+  bibsource  = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@article{nasnet,
+  author     = {Barret Zoph and
+                Vijay Vasudevan and
+                Jonathon Shlens and
+                Quoc V. Le},
+  title      = {Learning Transferable Architectures for Scalable Image Recognition},
+  journal    = {CoRR},
+  volume     = {abs/1707.07012},
+  year       = {2017},
+  url        = {http://arxiv.org/abs/1707.07012},
+  eprinttype = {arXiv},
+  eprint     = {1707.07012},
+  timestamp  = {Mon, 13 Aug 2018 16:48:00 +0200},
+  biburl     = {https://dblp.org/rec/journals/corr/ZophVSL17.bib},
+  bibsource  = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@article{xceptionnet,
+  author     = {Fran{\c{c}}ois Chollet},
+  title      = {Xception: Deep Learning with Depthwise Separable Convolutions},
+  journal    = {CoRR},
+  volume     = {abs/1610.02357},
+  year       = {2016},
+  url        = {http://arxiv.org/abs/1610.02357},
+  eprinttype = {arXiv},
+  eprint     = {1610.02357},
+  timestamp  = {Mon, 13 Aug 2018 16:46:20 +0200},
+  biburl     = {https://dblp.org/rec/journals/corr/Chollet16a.bib},
+  bibsource  = {dblp computer science bibliography, https://dblp.org}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   END  MODEL ZOO CITATIONS.    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+@misc{a100,
+  title = {{NVIDIA A100}},
+  year = {2022}, 
+  howpublished = {\url{https://www.nvidia.com/en-us/data-center/a100/}},
+}
+
+@misc{a100-mig,
+  title = {{NVIDIA Multi-Instance GPU User Guide}},
+  year = {2022}, 
+  howpublished = {\url{https://docs.nvidia.com/datacenter/tesla/pdf/NVIDIA_MIG_User_Guide.pdf}},
+}
+
+@misc{a100-TC,
+  title = {NVIDIA Ampere Architecture Whitepaper},
+  year = {2020}, 
+  howpublished = {\url{https://images.nvidia.com/aem-dam/en-zz/Solutions/data-center/nvidia-ampere-architecture-whitepaper.pdf}},
+}
+
+
  

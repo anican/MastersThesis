@@ -652,7 +652,7 @@
        \Programtext{Program Authorized to Offer Degree: }
 
 \def\textofCommittee#1{\gdef\@textofCommittee{#1}}  
-       \textofCommittee{Reading Committee: }
+       \textofCommittee{Supervisor: Arvind Krishnamurthy}
 \def\textofDate#1{\gdef\@textofDate{#1}}  \textofDate{Date}
 
 \def\textofChair#1{\gdef\@textofChair{#1}}

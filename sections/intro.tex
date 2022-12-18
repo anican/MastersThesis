@@ -1,0 +1,29 @@
+In the past two decades, advancements in datacenter systems and the proliferation of personal computing devices like smartphones have motivated ever increasing numbers of applications and services to move to the cloud. 
+To date, cloud operators have built their datacenters with commodity components in order to provide large-scale services and gain the benefits of economies of scale. However, with the slowdown of Moore’s law and Dennard scaling \cite{barroso}, cloud systems increasingly offload application-specific workloads from the CPU to specialized hardware in order to improve performance, energy usage, and cost-efficiency.
+In particular, machine learning (ML) is a key example of an emerging and popular workload that benefits from being run on clusters of accelerators, such as graphics processing units (GPU). Broadly, there are two major categories of machine learning systems: systems for ML training, which is the process of learning patterns from data, and model serving systems for ML inference, which is the process of efficiently executing pre-trained models. In the setting of a cloud-scale inference service, we assume clients upload latency-sensitive requests.
+
+Cloud operators codify the latency-sensitivity of inference jobs into serving systems by allowing clients to specify service-level objectives (SLOs), a sort of contract that the service will complete a request in a certain time. Ultimately, the goals of inference systems are to maximize throughput while taking great care to satisfy all SLOs.
+For this study, we focus on model serving systems for running Deep Neural Network (DNN) models efficiently on GPUs. GPUs process DNNs orders of magnitude faster than CPUs, but are also more expensive. In order for GPUs to be cost-effective, it is essential that cloud operators build model serving systems that are {resource-efficient} by keeping GPUs at sustained high utilization. In addition to \emph{resource-efficiency}, Jain et al. identify \emph{latency predictability} and \emph{performance isolation} as key design criterion for model serving systems \cite{DBLP:journals/corr/abs-1901-00041}. These two additional metrics are essential since the goal of model serving systems is to guarantee quality of service by meeting very tight SLOs (typically specified on an order of magnitude between $10^1$ (ms) and $10^2$ (ms)). 
+
+Traditional inference serving systems like Clipper \cite{Clipper} or TFServing \cite{TFServing} utilize an exclusive-access model, where each DNN model has full ownership of a GPU and its resource. This model, although good for performance isolation, leads to very low GPU utilization and, accordingly, poor resource-efficiency. 
+Furthermore, these first generation systems fail on metrics of latency predictability. State-of-the-art systems like Clockwork, Nexus, and Symphony \cite{clockwork,nexus,symphony} employ time multiplexing strategies where a cluster scheduler interleaves requests for different models such that each GPU only executes requests for a single model in any given insant of time. 
+
+Another approach to GPU multiplexing is spatial multiplexing, where the cluster scheduler employs GPU multi-tenancy and concurrently executes multiple DNN workloads. The chief promise of spatial multiplexing is greater resource-efficiency. However, existing approaches for spatial multiplexing severely compromise predictability and performance isolation as demonstrated in Chapter 1. 
+
+go to
+
+%\begin{table}[hbt]
+%%\uwsinglespace
+%\centering
+%\begin{tabular}{|c|c|c|c|}
+%\hline
+%Device     & $\alpha$ (ms) & $\beta$ (ms) & $R^2$ \\ \hline
+%Bare-metal & 0.333         & 4.312        & 0.991 \\ \hline
+%7g.40gb    & 0.339         & 4.497        & 0.994 \\ \hline
+%3g.20gb    & 0.745         & 4.196        & 0.999 \\ \hline
+%2g.10gb    & 1.392         & 4.188        & 1.000 \\ \hline
+%1g.5gb     & 3.010         & 5.368        & 0.999 \\ \hline
+%\end{tabular}
+%\caption{Model profiles on an NVIDIA A100.}
+%\label{tab:full-latency-profiles-a100}
+%\end{table}
